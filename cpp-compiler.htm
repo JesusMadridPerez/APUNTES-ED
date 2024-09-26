@@ -1,0 +1,413 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Compiler in C++ | Difference Between Compiler Interpreter - C++ Tutorial</title>
+<link rel="icon" href="../files/icon.png" type="image/png">
+<meta name="keywords" content="Compiler in C++ Language"/>
+<meta name="description" content="Compiler in C++ - A compiler is system software which converts programming language code into binary format in single steps."/>
+<meta content="index, follow" name="Robots"/>
+<meta name="author" content="Sitesbay.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+<meta name="theme-color" content="#00b8e4">
+
+<script data-ad-client="ca-pub-8711073088012951" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8711073088012951"
+     crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="/files/style.css"><link rel="stylesheet" type="text/css" href="../files/style.css">
+</head>
+<body style="margin-bottom: 90px; margin-left: 0px;" onload="prettyPrint()">
+<!-- header fields -->
+<!-- header pages fields -->
+<div id="topmenu">
+<div class="wrapper">
+<div id="left">
+<a href="/index" target="_top">HOME</a>
+<a href="/cprogramming/index" target="_top">C</a>
+<a href="/cpp/index" target="_top">C++</a>
+<a href="/data-structure/index" target="_top">DS</a>
+<a href="/java/index" target="_top">Java</a>
+<a href="/awt/index" target="_top">AWT</a>
+<a href="/collection-framework/index" target="_top">Collection</a>
+<a href="/jdbc/index" target="_top">Jdbc</a>
+<a href="/jsp/index" target="_top">JSP</a>
+<a href="/servlet/index" target="_top">Servlet</a>
+<a href="/sql/index" target="_top">SQL</a>
+<a href="/plsql/index" target="_top">PL/SQL</a>
+<a href="/program/index" target="_top">C-Code</a>
+<a href="/cpp-program/index" target="_top">C++-Code</a>
+<a href="/java-program/index" target="_top">Java-Code</a>
+<a href="/project/index" target="_top">Project</a>
+<a href="/word/index" target="_top">Word</a>
+<a href="/excel/index" target="_top">Excel</a>
+</div>
+<div id="right">
+
+<div style="width:41%; margin-left: 30%; margin-top: 30px;">
+<!-- Search Box -->
+
+</div>
+<!-- End Adsense Search Ad -->
+
+</div>
+</div>
+</div>   <!--  End wrapper -->
+</div>  <!-- End Topmenu -->
+<div id="header">
+<div class="wrapper">
+<h2 style="float:left;border:0;no-repeat; left;width:280px;overflow:visible;text-indent:-9999px;margin:0;padding:0;position:relative;left:0;z-index:10"> <a href="https://www.sitesbay.com/">Sitesbay - Easy to Learn <img style="float:left;border:0;no-repeat; left;width:280px;overflow:visible;text-indent:-9999px;margin:0;padding:0;position:relative;left:0;z-index:10" src="../files/logo.png" alt="Sitesbay" title="Sitesbay"></a></h2>
+<div style="padding-right: 58px; padding-top: 30px;">
+<div class="social-wrap">
+<ul>
+<li><a style="float:right;border: 4px solid #e5e5e5;" class="twitter1" href="https://twitter.com/sitesbay" rel="nofollow" target="_blank" title="Twitter"></a></li>
+<li><a style="float:right;border: 4px solid #e5e5e5;" class="youtube" href="https://www.youtube.com/c/Sitesbay/videos/?sub_confirmation=1" rel="nofollow" target="_blank" title="YouTube"></a></li>
+<li><a style="float:right;border: 4px solid #e5e5e5;" class="google-p1" href="https://plus.google.com/+sitesbay" rel="publisher" rel="nofollow" target="_blank" title="Google+"></a></li>
+<li><a style="float:right;border: 4px solid #e5e5e5;" class="facebook1" href="https://www.facebook.com/sitesbay" rel="nofollow" target="_blank" title="Facebook"></a></li>
+</ul>
+</div>
+</div>
+<!-- End wrapper -->
+</div> <!-- End Header -->
+</div> <!-- End Header -->
+<div id="topmenu">
+<div class="wrapper">
+<div id="left">
+<a href="/html/index" target="_top">Html</a>
+<a href="/html5/index" target="_top">Html5</a>
+<a href="/css/index" target="_top">CSS</a>
+<a href="/javascript/index" target="_top">JavaScript</a>
+<a href="/ajax/index" target="_top">Ajax</a>
+<a href="/jquery/index" target="_top">JQuery</a>
+<a href="/angularjs/index" target="_top">AngularJS</a>
+<a href="/json/index" target="_top">JSON</a>
+<a href="/google-maps/index" target="_top">GMaps</a>
+<a href="/adsense/index" target="_top">Adsense</a>
+<a href="/blogger/index" target="_top">Blogger</a>
+<a href="/online-earning/index" target="_top">Earning</a>
+<a href="/email-marketing/index" target="_top">Email</a>
+<a href="/domain-hosting/index" target="_top">Domain</a>
+<a href="/seo/index" target="_top">SEO</a>
+<a href="/smo/index" target="_top">SMO</a>
+</div>
+<div id="right">
+<a target="_blank" href="/interview/index" rel="_nofollow">QUE ?</a> |
+<a target="_top" href="/about">ABOUT</a> |
+<a target="_top" href="/services">SERVICES</a> |
+<a target="_blank" href="https://www.facebook.com/Sitesbay">CONTACT</a>
+</div>
+</div>   <!--  End wrapper -->
+</div>  <!-- End Topmenu --><!-- left column -->
+<div class="wrapper">
+<div id="leftcol">
+<div class="mini-logo">
+<img src="files/sublogo.png" alt="C++ Tutorials" >
+</div>
+<nav>
+<div class="handle">Menu</div>
+<ul>
+<li class="heading">Basics of C++ Programming</li>
+<li><a target="_top" href="index"><b>C++ - Home</a></b></li>
+<li><a target="_top" href="cpp-overview">C++ - Overview of C++</a></li>
+<li><a target="_top" href="features-of-cpp">C++ - Features of C++</a></li>
+<li><a target="_top" href="applications-of-cpp">C++ - Applications of C++</a></li>
+<li><a target="_top" href="cpp-difference-between-c-and-cpp">C++ - Differences C and C++</a></li>
+<li><a target="_top" href="installation-of-cpp">C++ - Installation of C++</a></li>
+<li><a target="_top" href="tc-editor">C++ - TC Editor</a></li>
+<li><a target="_top" href="cpp-compiler">C++ - Compiler in C++</a></li>
+<li><a target="_top" href="cpp-comment">C++ - Comments in C++</a></li>
+<li><a target="_top" href="cpp-keywords">C++ - Keywords in C++</a></li>
+<li><a target="_top" href="cpp-constant">C++ - Constant in C++</a></li>
+<li><a target="_top" href="cpp-variable">C++ - Variable in C++</a></li>
+<li><a target="_top" href="cpp-variable-declaration">C++ - Variable Declaration Rule</a></li>
+<li><a target="_top" href="cpp-scope-of-variable">C++ - Scope of Variable</a></li>
+<li><a target="_top" href="cpp-datatype">C++ - DataType in C++</a></li>
+<li><a target="_top" href="cpp-datatype-modifiers">C++ - Data Type Modifiers</a></li>
+<li><a target="_top" href="cpp-operators">C++ - Operators in C++</a></li>
+<li><a target="_top" href="cpp-increment-and-decrement">C++ - ++ and -- Operator</a></li>
+<li><a target="_top" href="cpp-first-program">C++ - First C++ Program</a></li>
+<li><a target="_top" href="cpp-ternary-operator">C++ - Ternary Operator</a></li>
+<li><a target="_top" href="cpp-expression-evaluation">C++ - Expression Evaluation</a></li>
+<li><a target="_top" href="cpp-errors">C++ - Errors in C++</a></li>
+<li><a target="_top" href="structure-of-cpp-program">C++ - Structure of C++ Program</a></li>
+<li><a target="_top" href="cpp-cout-and-cin">C++ - Cout and Cin</a></li>
+<li><a target="_top" href="cpp-main()-function">C++ - Main() Function</a></li>
+<li><a target="_top" href="cpp-clrscr()-and-getch()">C++ - getch and clrscr</a></li>
+<li><a target="_top" href="cpp-scope-resolution-operator">C++ - Scope Resolution Operator</a></li>
+</ul>
+<ul>
+<li class="heading">C++ Control Statements</li>
+<li><a target="_top" href="cpp-decision-making-statement">C++ - Decision Making Statement</a></li>
+<li><a target="_top" href="cpp-if-statement">C++ - If Statement</a></li>
+<li><a target="_top" href="cpp-if-else">C++ - if...else Statement</a></li>
+<li><a target="_top" href="cpp-switch-case">C++ - Switch Statement</a></li>
+<li><a target="_top" href="cpp-control-flow-statement">C++ - Control Flow Statement</a></li>
+<li><a target="_top" href="cpp-while-loop">C++ - While Loop</a></li>
+<li><a target="_top" href="cpp-for-loop">C++ - For Loop</a></li>
+<li><a target="_top" href="cpp-do-while-loop">C++ - do-while Loop</a></li>
+</ul>
+<ul>
+<li class="heading">C++ Function</li>
+<li><a target="_top" href="cpp-function">C++ - Function in C++</a></li>
+<li><a target="_top" href="cpp-call-by-value-call-by-reference">C++ - Function Arguments</a></li>
+<li><a target="_top" href="cpp-inline-function">C++ - Inline Function</a></li>
+<li><a target="_top" href="cpp-function-overloading">C++ - Function Overloading</a></li>
+<li><a target="_top" href="cpp-friend-function">C++ - Friend Function</a></li>
+<li><a target="_top" href="cpp-virtual-function">C++ - Virtual Function</a></li>
+<li><a target="_top" href="cpp-recursion">C++ - Recursion</a></li>
+</ul>
+<ul>
+<li class="heading">C++ Object Oriented</li>
+<li><a target="_top" href="cpp-oops-concept">C++ - oops Concept</a></li>
+<li><a target="_top" href="cpp-access-specifiers-in-cpp">C++ - Access Specifier</a></li>
+<li><a target="_top" href="cpp-class-and-object">C++ - Class and Object</a></li>
+<li><a target="_top" href="cpp-inheritance">C++ - Inheritance</a></li>
+<li><a target="_top" href="cpp-abstraction">C++ - Abstraction</a></li>
+<li><a target="_top" href="cpp-encapsulation">C++ - Encapsulation</a></li>
+<li><a target="_top" href="cpp-polymorphism">C++ - Polymorphism</a></li>
+</ul>
+<ul>
+<li class="heading">Advance C++ Tutorials</li>
+<li><a target="_top" href="cpp-constructor">C++ - Constructor in C++</a></li>
+<li><a target="_top" href="cpp-array">C++ - Array in C++</a></li>
+<li><a target="_top" href="cpp-structure-in-cpp">C++ - Structure in C++</a></li>
+<li><a target="_top" href="cpp-string">C++ - String in C++</a></li>
+<li><a target="_top" href="cpp-command-line-argument">C++ - Command Line Arguments</a></li>
+<li><a target="_top" href="cpp-exception-handling">C++ - Exception Handling</a></li>
+<li><a target="_top" href="cpp-header-files">C++ - Header files in C++</a></li>
+</ul>
+<ul>
+<li class="heading">File Handling</li>
+<li><a target="_top" href="cpp-file-handling">C++ - File Handling in C++</a></li>
+</ul>
+<ul>
+<li class="sreading">Programming Tips</li>
+<li><a target="_blank" href="/cprogramming/c-enable-graphics-library">Enable Graphics Library</a></li>
+<li><a target="_blank" href="/interview/cpp-interview-questions">C++ Interview Questions</a></li>
+<li><a target="_blank" href="/cpp-program/index">Top 100 C++ Programs</a></li>
+</ul>
+</nav>
+</div><!-- End  leftcol -->
+<!-- middle fields -->
+<div id="middlecol">
+<!-- Start write content -->
+<div class="content">
+<h1>Compiler in C++</h1>
+<!-- Display topads here -->
+<div class="topads">
+<center>
+<div style="padding-bottom:5px;">Advertisements
+</div>
+
+<!-- Sitesbay Horizontal Ads -->
+
+
+</center>
+</div>
+<div class="clearer"></div><hr />
+<!-- upper preview or next button -->
+ <div class='post_neighbors_container_wrapper'>
+<a class="pre-btn" href="tc-editor"><span style="color:#28B">Editor in C++</span></a>
+<a class="nxt-btn" href="cpp-comment"><span style="color:#28B">Comments in C++</span></a>
+</div>
+<div class="clearer"></div>
+<hr />
+<h2 class="center">Compiler in C++</h2>
+<p>A compiler is system software which converts programming language code into binary format in single steps. In other words Compiler is a system software which can take input from other any programming language and convert it into lower level machine dependent language.</p>
+<img src="/cpp/images/cpp-compiling.png" alt="C++ Compiling" title="C++ Compiling">
+<h2>Interpreter</h2>
+<p>It is system software which is used to convert programming language code into binary format in step by step process.</p>
+<h2>Assembler</h2>
+<p>An assembler is system software which is used to convert the assembly language instruction into binary format in step by step process.
+An assembler is system software which is used to convert the assembly language instruction into binary format.</p>
+<h2>Difference Between Compiler Interpreter</h2>
+<table class="src">
+<tr><th>No</th><th>Compiler</th><th>Interpreter</th></tr>
+<tr><td>1</td><td>Compiler takes Entire program as input at a time.</td><td>Interpreter takes Single instruction as input at a time.</td></tr>
+<tr><td>2</td><td>Intermediate Object code is generated</td><td>No Intermediate Object code is generated</td></tr>
+<tr><td>3</td><td>It execute conditional control statements fastly.</td><td>It execute conditional control statements slower than Compiler</td></tr>
+<tr><td>4</td><td>More memory is required.</td><td>Less memory is required.</td></tr>
+<tr><td>5</td><td>Program need not to be compiled every time</td><td>Every time higher level program is converted into lower level program</td></tr>
+<tr><td>6</td><td>It display error after entire program is checked</td><td>It display error after each instruction interpreted (if any)</td></tr>
+<tr><td>7</td><td>Example: C, C++</td><td>Example: BASIC</td></tr>
+</table>
+<div class="internal-link-container">
+<a class="internal-link" href="features-of-cpp">Features of C++</a>
+<a class="internal-link" href="cpp-difference-between-c-and-cpp">Difference Between C and C++</a>
+</div>
+<div class="internal-link-container">
+<a class="internal-link" href="installation-of-cpp">Installation of C++</a></li>
+<a class="internal-link" href="cpp-compiler">Compile in C++</a>
+</div>
+<div class="internal-link-container">
+<a class="internal-link" href="cpp-comment">Comments in C++</a>
+<a class="internal-link" href="cpp-keywords">Keywords in C++</a>
+</div>
+<div class="internal-link-container">
+<a class="internal-link" href="cpp-variable">Variable in C++</a>
+<a class="internal-link" href="cpp-constant">Constant in C++</a>
+</div>
+<!-- Bottom preview or next button -->
+<hr />
+<div class='post_neighbors_container_wrapper'>
+<a class="pre-btn" href="tc-editor"><span style="color:#28B">Editor in C++</span></a>
+<a class="nxt-btn" href="cpp-comment"><span style="color:#28B">Comments in C++</span></a>
+</div>
+<hr />
+<!-- Bottom ads -->
+<div class="bottomads">
+<div style="padding-bottom:5px; margin-left:120px;">Google Advertisment
+</div>
+
+</div>
+<div style="display: table; padding: 10px; border: 5px dashed rgb(0, 0, 255); margin-bottom: 10px; background: none repeat scroll 0% 0% rgb(92, 175, 255); border: 5px dashed rgb(0, 0, 0);">
+<h2><a style="color: rgb(255, 255, 255);" href="/about" target="_blank">Buy This Ad Space @$20 per Month, Ad Size 600X200 Contact on: hitesh.xc@gmail.com or 9999595223</a></h2>
+</div>
+<div style="display: table; padding: 10px; border: 5px dashed rgb(0, 230, 0); margin-bottom: 10px; background: none repeat scroll 0% 0% rgb(128, 255, 229); border: 5px dashed rgb(0, 0, 0);">
+<h2>Magenet is best Adsense Alternative here we earn $2 for single link, Here we get links ads. <a style="color: rgb(0, 128, 102);" href="https://www.magenet.com/website-value-calculator/?ref=referral&ref_type=direct&ref_id=ccw2ixyhvvadizk2&ref_item=4" target="_blank">Magenet</a></h2>
+</div>
+<div class="clearer"></div><!-- end Bottom ads -->
+<div class="clearer"></div>
+</div>  <!-- End content -->
+</div>  <!-- wrapper -->
+<div id="rightcol">
+<!-- other Ads -->
+<div style="padding:5px; margin:5px; margin-top:2px; border:1px solid #908e8f; background:#fff; text-align:center; border-radius: 5px;">
+<div style="background: #00b8e4; color: #fff; font-size: 20px; font-weight: bold; height: 30px; text-align: center; margin: 0px; padding: 5px;>
+<p style="color:#FFFFFF;"><a style="color:#FFFFFF;" href="/project/index" target="_blank">For Projects 9999595223</a></p>
+</div>
+</div>
+<div style="padding-bottom:5px;">Google Advertisements</div>
+
+<!-- Sitesbay 300900 Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8711073088012951"
+     crossorigin="anonymous"></script>
+<!-- Sitesbay 300x900 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:900px"
+     data-ad-client="ca-pub-8711073088012951"
+     data-ad-slot="7361446355"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</br>
+</br>
+<div style="padding-bottom:5px;padding-left:10px;padding-top:2px;">Buy Websites 9999595223
+</div>
+<div style="display: table; padding: 10px; background: none repeat scroll 0% 0% rgb(51, 122, 183); border: 5px dashed rgb(0, 0, 0);">
+<h2><a style="color: rgb(255, 255, 255);" href="/about" target="_blank">Buy College Projects with Documentation Contact on whatsapp 9999595223. Contact on: hitesh.xc@gmail.com or 9999595223</a> Try this Keyword <a style="color: rgb(255, 255, 255);" href="/cpp-program/index">C++ Programs</a></h2>
+</div>
+
+<!-- End other Ads -->
+
+<!-- right side ads -->
+<div class="rightads" style="align:middle">
+<div style="padding-bottom:5px;padding-left:10px;">Advertisements
+</div>
+
+</div>
+<!-- end right side ads --><!-- end right side ads -->
+</div> <!-- End Righcol -->
+<div style="clear:both;"></div>
+</div><!-- End wrapper -->
+<!-- Footer Area -->
+<footer>
+<div class="footer-top-row">
+<div class="container">
+<div class="footer-ribon">
+<span>Get in Touch</span>
+</div>
+<div class="footer-col-1">
+<h2 style="color:#fff;float:left;font-size:20px;font-weight:400;font-family:"Open Sans",Arial,sans-serif;padding:0 0 20px 0">Our Tutorial</h2>
+<ul>
+<li><span>&#x25b6;</span>&nbsp;<a href="/java/index">Java</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/jdbc/index">JDBC</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/servlet/index">Servlet</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/jsp/index">JSP</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/collection-framework/index">Collection</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/interview/index">Interview</a></li>
+</ul>
+</div>
+<div class="footer-col-2">
+<h2 style="color:#fff;float:left;font-size:20px;font-weight:400;font-family:"Open Sans",Arial,sans-serif;padding:0 0 20px 0">Trending Tutorials</h2>
+<ul>
+<li><span>&#x25b6;</span>&nbsp;<a href="/cyber-security/index" target="_blank" rel="nofollow">Cyber Security</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/ethical-hacking/index" target="_blank" rel="nofollow">Ethical Hacking</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/kali-linux/index" target="_blank" rel="nofollow">Kali Linux</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/seo/index" target="_blank" rel="nofollow">SEO</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/aptitude/index" target="_blank" rel="nofollow">Aptitude</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/reasoning/index" target="_blank" rel="nofollow">Reasoning</a></li>
+</ul>
+</div>
+<div class="footer-col-3">
+<h2 style="color:#fff;float:left;font-size:20px;font-weight:400;font-family:"Open Sans",Arial,sans-serif;padding:0 0 20px 0">Digital Marketing</h2>
+<ul>
+<li><span>&#x25b6;</span>&nbsp;<a href="/seo/index">SEO</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/smo/index">SMO</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/email-marketing/index">Email</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/adsense/index">Adsense</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/blogger/index">Blogger</a></li>
+<li><span>&#x25b6;</span>&nbsp;<a href="/online-earning/index">Earning</a></li>
+</ul>
+</div>
+<div class="footer-col-4">
+<h2 style="color:#fff;float:left;font-size:20px;font-weight:400;font-family:"Open Sans",Arial,sans-serif;padding:0 0 20px 0">Contact Us</h2>
+<ul>
+<li><span>&#x2297;</span>&nbsp;Email:&nbsp;&nbsp;<a href="mailto:contact@sitesbay.com">contact@sitesbay.com</a></li>
+<li><span>&#x2297;</span>&nbsp;Website:&nbsp;&nbsp;<a href="/index"  target="_blank">https://www.sitesbay.com</a></li>
+<li><span>&#x2297;</span>&nbsp;Facebook:&nbsp;&nbsp;<a href="https://www.facebook.com/sitesbay/" target="_blank" rel="nofollow">www.facebook.com/Sitesbay</a></li>
+</ul>
+</div>
+<div class="social-wrap">
+<ul>
+<li><a class="facebook1" href="https://www.facebook.com/sitesbayc" rel="nofollow" target="_blank" title="Facebook"></a></li>
+<li><a class="google-p1" href="https://plus.google.com/b/109922467763085678064" rel="nofollow" target="_blank" title="Google Plus"></a></li>
+<li><a class="twitter1" href="https://twitter.com/sitesbay" rel="nofollow" target="_blank" title="Twitter"></a></li>
+<li><a class="youtube" href="https://www.youtube.com/c/Sitesbay/videos/?sub_confirmation=1" rel="nofollow" target="_blank" title="Yuotube"></a></li>
+</ul>
+</div>
+</div> <!-- footer-top-row -->
+</div> <!-- container -->
+<div class="copyright">
+<div class="container">
+<div class="copyright-left-col">
+<a href="/index" target="_blank"><img src="../files/logo-footer.png" alt="sitesbay" title="Images"></a>
+<p>&#169; Copyright 2014-2024. All Rights Reserved &#64; <a href="/index">Sitesbay</a>.</p>
+</div>
+<div class="copyright-right-col">
+<ul>
+<li><a href="/about">About us</a></li>
+<li><span>&nbsp;|&nbsp;</span><a href="/privacy-policy">Privacy</a></li>
+<li><span>&nbsp;|&nbsp;</span><a href="/copyright">Copyright</a></li>
+<li><span>&nbsp;|&nbsp;</span><a href="https://www.facebook.com/Sitesbay">Feedback</a></li>
+</ul>
+</div>
+</div> <!-- container -->
+</div> <!-- copyright -->
+
+</footer>
+
+<script async type="text/javascript" src="../files/prettify.js"></script>
+<script async type="text/javascript" src="../files/run_prettify.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+	$('.handle').on('click', function() {
+	$('nav ul').toggleClass('showing');
+	});
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81421025-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81421025-1');
+</script>
+</body>
+</html>
